@@ -54,7 +54,7 @@ if __name__=="__main__":
     parser.add_argument('-e', '--encriptar', help='Encriptar arquivo', action='store_true')
     parser.add_argument('-d', '--decriptografar', help='Decriptografar arquivo', action='store_true')
     args = parser.parse_args()
-
+    
     # verifica as opções escolhidas pelo usuario e faz o devido processo
     if args.arquivo and args.encriptar:
         encriptar_arquivo(args.arquivo)
@@ -62,3 +62,4 @@ if __name__=="__main__":
         decriptografar_arquivo(args.arquivo)
     else:
         print('Digite um comando válido -_-')
+    # exemplo rápido de uso: python EncryptMe.py -a nome_arquivo -e (encriptar) ou -d (decriptar)
